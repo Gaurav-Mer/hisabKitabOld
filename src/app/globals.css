@@ -1,0 +1,94 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.mainColor {
+  background-color: #4f2f80;
+}
+
+.my-swal {
+  z-index: 3000;
+}
+
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.upload-button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-button input[type="file"] {
+  position: absolute;
+  font-size: 100px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-button label {
+  display: inline-block;
+  padding: 10px 20px;
+  /* background-color: #3498db; */
+  color: #3498db;
+  border: 1px dashed #3498db;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.upload-button label:hover {
+  background-color: #2980b9;
+}
+
+.bg-blue,
+.bg-blue:hover {
+  background-color: #3498db;
+}
+
+.link {
+  text-decoration: none;
+  color: "black";
+}
+
+.bg {
+  background: linear-gradient(to bottom, #efeded, #fefcff);
+}
+
+.b-shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.circular-input-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 10%;
+  overflow: hidden;
+  background-color: #ddd; /* Default background color */
+}
+
+.circular-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.uploaded-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  font-size: 18px;
+}
+
+.cancel {
+}
