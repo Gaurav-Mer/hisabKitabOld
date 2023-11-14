@@ -38,14 +38,14 @@ export default function Home() {
 
   useEffect(() => {
     if (typeof window !== undefined && hisabDb) {
-      fetchDbData()
+      fetchDbData();
     }
   }, [hisabDb])
 
   async function handleSearch(e) {
     let name = e.target.value;
     const kitabData = await hisabDb.kitab.filter((data) => data?.name?.toLowerCase()?.includes(name?.toLowerCase())).toArray();
-    setKitabList(kitabData)
+    setKitabList(kitabData);
   }
 
   return (
